@@ -1,0 +1,64 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    background-color: brown;
+}
+.main__grafic {
+    display: flex;
+    
+    width: 100%;
+}
+.main__monthly-progress {
+    width: 704px;
+    height: 266px;
+    background-color: green;
+    border: blue 2px solid;
+}
+
+.main__revenue {
+    width: 264px;
+    height: 266px;
+    background-color: green;
+    border: blue 2px solid;
+}
+.test {
+    display: flex;
+    
+}
+
+.main__customers {
+    display: flex;
+    width: 467px;
+    height: 508px;
+    background-color: green;
+    border: blue 2px solid;
+}
+.main__task-progress-shipments {
+    display: flex;
+    flex-direction: column;
+    
+}
+.main__task {
+    width: 501px;
+    height: 245px;
+    background-color: green;
+    border: blue 2px solid;
+}
+.main__progress-shipments {
+    display: flex;
+}
+
+.main__progress {
+    width: 241px;
+    height: 245px;
+    background-color: green;
+    border: blue 2px solid;
+}
+
+.main__shipments {
+    width: 241px;
+    height: 245px;
+    background-color: green;
+    border: blue 2px solid;
+}

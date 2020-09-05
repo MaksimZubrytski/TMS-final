@@ -10,7 +10,7 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 1366px;
-  height: 1000px;
+  height: 1000x;
   margin: 0 auto;
   overflow: hidden;
   text-align: center;
@@ -66,12 +66,25 @@
 }
 
 .main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 1296px;
   height: 1000px;
   background-color: orange;
+}
+
+.test-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
@@ -84,5 +97,110 @@
   width: 100%;
   height: 71px;
   background-color: grey;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: brown;
+}
+
+.main__grafic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main__monthly-progress {
+  width: 704px;
+  height: 266px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.main__revenue {
+  width: 264px;
+  height: 266px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 467px;
+  height: 508px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.main__task-progress-shipments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__task {
+  width: 501px;
+  height: 245px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.main__progress-shipments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__progress {
+  width: 241px;
+  height: 245px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.main__shipments {
+  width: 241px;
+  height: 245px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 273px;
+  height: 612px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 273px;
+  height: 229px;
+  background-color: green;
+  border: blue 2px solid;
 }
 /*# sourceMappingURL=main.css.map */

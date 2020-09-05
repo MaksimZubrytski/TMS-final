@@ -3,12 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .wrapper {
     display: flex;
-    
 
     max-width: 1366px;
-    height: 1000px;
+    height: 1000x;
 
     margin: 0 auto;
     overflow: hidden;
@@ -17,59 +17,29 @@
     background-color: green;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    width: 70px;
-    background-color: red;
-    height: 1000px;
-     
-    &__logo {
-        width: 100%;
-        padding: 25px 0px 23px; 
-        height: 71px;
-        background-color: green;
+@import "./components/navigation";
 
-        color: #FD7858;
-        font-size: 30px;
-    }
-    &__menu {
-        display: flex;
-        flex-direction: column;
-        
-        width: 100%;
-        height: 100%;
-    }
-    &__link {
-        padding-top: 30px;
-        width: 100%;
-    }
-    &__text {
-        margin-top: 10px;
-    }
-}
-.bottom-link {
-    color: green;
-    margin-top: auto;
-}
 .main-content {
-    display: flex;
+
 
     width: 1296px;
     height: 1000px;
     background-color: orange;
-    
 
 }
-.header {
-
-    width: 100%;
-    height: 163px;
-    background-color: blue;
-    
-    &__nav {
-        width: 100%;
-        height: 71px;
-        background-color: grey;
-    }
+.test-2 {
+    display: flex;
 }
+.test-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+@import "./components/header";
+
+
+@import "./components/main";
+
+@import "./components/aside";
+
+@import "./components/footer";
