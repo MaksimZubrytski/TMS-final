@@ -12,11 +12,15 @@
 
     margin: 0 auto;
     overflow: hidden;
-
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     text-align: center;
     background-color: green;
 }
-
+/* =============== Config *===========*/
+a {
+    text-decoration: none;
+}
 @import "./components/navigation";
 
 .main-content {
