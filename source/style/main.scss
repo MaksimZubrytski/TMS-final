@@ -15,16 +15,23 @@
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-align: center;
+    font-size: 12px;
     background-color: green;
 }
 /* =============== Config *===========*/
 a {
     text-decoration: none;
 }
+ul {
+    display: flex;
+
+    list-style-type: none;
+}
 @import "./components/navigation";
 
 .main-content {
-
+    display: flex;
+    flex-direction: column;
 
     width: 1296px;
     height: 1000px;
