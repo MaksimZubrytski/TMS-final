@@ -3,25 +3,74 @@
     flex-direction: column;
 
     background-color: brown;
-}
-.main__grafic {
-    display: flex;
-    
-    width: 100%;
-}
-.main__monthly-progress {
-    width: 704px;
-    height: 266px;
-    background-color: green;
-    border: blue 2px solid;
+
+    &__title {
+        padding-top: 30px;
+
+        font-size: 14px;
+    }
+    &__grafic {
+        display: flex;
+        width: 100%;
+        
+    }
+    &__monthly-progress {
+        width: 704px;
+        height: 266px;
+        padding: 30px;
+
+        text-align: left;
+        background-color: green;
+        border: blue 2px solid;
+    }
+    &__revenue {
+        width: 264px;
+        height: 266px;
+        background-color: green;
+        border: blue 2px solid;
+    }
+    &__order {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 37px;
+
+        border-top: 1px solid #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+    }
+    &__progress {
+        width: 241px;
+        height: 245px;
+        background-color: green;
+        border: blue 2px solid;
+    }
+    &__img-progress {
+        width: 187px;
+        height: 115px;
+        margin: 0 auto;
+
+        background: url(/source/img/main/progress.png) no-repeat center center;
+        background-size: cover;
+    }
+    &__shipments {
+        width: 241px;
+        height: 245px;
+        
+        background-color: #ffffff;
+        border: blue 2px solid;
+    }
+    &__img-map {
+        width: 187px;
+        height: 115px;
+        margin: 0 auto;
+
+        background: url(/source/img/main/usa-map.png) no-repeat center center;
+        background-size: cover;
+    }
 }
 
-.main__revenue {
-    width: 264px;
-    height: 266px;
-    background-color: green;
-    border: blue 2px solid;
-}
+
+
 .test {
     display: flex;
     
@@ -49,16 +98,6 @@
     display: flex;
 }
 
-.main__progress {
-    width: 241px;
-    height: 245px;
-    background-color: green;
-    border: blue 2px solid;
-}
 
-.main__shipments {
-    width: 241px;
-    height: 245px;
-    background-color: green;
-    border: blue 2px solid;
-}
+
+

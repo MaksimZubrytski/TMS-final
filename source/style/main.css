@@ -125,16 +125,20 @@ ul {
 }
 
 .header__item {
-  padding: 25px 20px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0px 20px;
   border: 1px solid #F1F1F1;
-}
-
-.header__link {
-  margin: auto;
 }
 
 .header__img {
   width: 20px;
+  margin: 0px 0px;
 }
 
 .header__form {
@@ -306,6 +310,11 @@ ul {
   background-color: brown;
 }
 
+.main__title {
+  padding-top: 30px;
+  font-size: 14px;
+}
+
 .main__grafic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +325,8 @@ ul {
 .main__monthly-progress {
   width: 704px;
   height: 266px;
+  padding: 30px;
+  text-align: left;
   background-color: green;
   border: blue 2px solid;
 }
@@ -325,6 +336,50 @@ ul {
   height: 266px;
   background-color: green;
   border: blue 2px solid;
+}
+
+.main__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.main__progress {
+  width: 241px;
+  height: 245px;
+  background-color: green;
+  border: blue 2px solid;
+}
+
+.main__img-progress {
+  width: 187px;
+  height: 115px;
+  margin: 0 auto;
+  background: url(/source/img/main/progress.png) no-repeat center center;
+  background-size: cover;
+}
+
+.main__shipments {
+  width: 241px;
+  height: 245px;
+  background-color: #ffffff;
+  border: blue 2px solid;
+}
+
+.main__img-map {
+  width: 187px;
+  height: 115px;
+  margin: 0 auto;
+  background: url(/source/img/main/usa-map.png) no-repeat center center;
+  background-size: cover;
 }
 
 .test {
@@ -364,20 +419,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.main__progress {
-  width: 241px;
-  height: 245px;
-  background-color: green;
-  border: blue 2px solid;
-}
-
-.main__shipments {
-  width: 241px;
-  height: 245px;
-  background-color: green;
-  border: blue 2px solid;
 }
 
 .aside {

@@ -5,24 +5,22 @@
     
     &__nav {
         display: flex;
-
         width: 100%;
         
         background-color: #FFFFFF;
-
     }
     &__item {
-        padding: 25px 20px 28px;
-        
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0px 20px;
         
         border: 1px solid #F1F1F1; 
     }
-    &__link {
-        margin: auto;
-    }
+
     &__img {
         width: 20px;
-        
+        margin: 0px 0px;
     }
     &__form {
         position: relative;
