@@ -8,7 +8,7 @@
     display: flex;
 
     max-width: 1366px;
-    height: 1000x;
+    height: 100vh;
 
     margin: 0 auto;
     overflow: hidden;
@@ -16,7 +16,7 @@
     font-weight: 700;
     text-align: center;
     font-size: 12px;
-    background-color: green;
+    background-color: #ECECEC;
 }
 /* =============== Config *===========*/
 a {
@@ -54,3 +54,5 @@ ul {
 @import "./components/aside";
 
 @import "./components/footer";
+
+@import "./config/normalize";

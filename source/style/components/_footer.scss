@@ -1,8 +1,28 @@
 .footer {
     display: flex;
-
+    flex-direction: column;
+    
+    padding: 30px;
+    
     width: 273px;
     height: 229px;
     background-color: green;
     border: blue 2px solid;
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__list {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       
+        
+    }
+    &__item {
+        width: 55px;
+        height: 55px;
+        margin: 10px 5px;
+        background-color: #fff;
+    }
 }

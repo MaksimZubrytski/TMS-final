@@ -1,8 +1,103 @@
 .aside {
     display: flex;
-
+    flex-direction: column;
     width: 273px;
-    height: 612px;
+    height: 61vh;
     background-color: green;
     border: blue 2px solid;
+    &__nav {
+        display: flex;
+        width: 271px;
+        height: 48px;
+        background-color: #F77358;
+    }
+
+    &__menu {
+        width: 91px;
+        height: 48px;
+    }
+    .user {
+        background: url(/source/img/aside/users.png) no-repeat center center;
+        background-color: #C34455;
+    }
+    .chat {
+        background: url(/source/img/aside/chat.png) no-repeat center center;
+    }
+    .like {
+        background: url(/source/img/aside/like.png) no-repeat center center;
+    }
+    &__users {
+        display: block;
+        overflow: scroll;
+
+    }
+    &__user {
+        display: flex;
+        
+        align-items: center;
+        width: 273px;
+        height: 85px;
+        border-bottom: #F1F1F1 1px solid;
+    }
+    &__img {
+        
+        margin-left: 20px;
+        width: 42px;
+        height: 42px;
+        
+        background-size: cover;
+    }
+    &__name-job {
+
+        width: 110px;
+        margin-left: 16px;
+    }
+    &__name {
+        
+        font-size: 13px;
+        color: #777777;
+        margin-bottom: 10px;
+    }
+    &__job {
+        
+        font-size: 10px;
+        color: #BFBFBF;
+    }
+    &__chat {
+        
+        margin-left: 48px;
+        width: 20px;
+        height: 16px;
+        background: url(/source/img/aside/chat-copy.png) no-repeat center center;
+        
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        height: 48px;
+    }
+    &__form {
+        display: flex;
+    }
+    &__input {
+        width: 161px;
+        height: 25px;
+        margin-left: 18px;
+        font-size: 10px;
+        color: #C0C0C0;
+    }
+    .zoom {
+        margin: 0;
+        margin-left: 18px;
+        width: 19px;
+        height: 19px;
+        background: url(/source/img/aside/zoom.png) no-repeat center center;
+    }
+    .edit {
+        margin: 0;
+        margin-left: 14px;
+        width: 19px;
+        height: 19px;
+        background: url(/source/img/aside/edit.png) no-repeat center center;
+    }
 }
