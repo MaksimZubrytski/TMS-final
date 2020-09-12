@@ -72,7 +72,7 @@
         width: 582px;
         height: 117px; 
 
-        background: url(/source/img/main/graph.png) no-repeat center center;
+        background: url(../img/main/graph.png) no-repeat center center;
         background-size: cover;
     }
 
@@ -139,7 +139,7 @@
         width: 12px;
         height: 12px; 
 
-        background: url(/source/img/main/wall-clock.png) no-repeat center center;
+        background: url(../img/main/wall-clock.png) no-repeat center center;
     }
     &__progress {
         width: 241px;
@@ -152,7 +152,7 @@
         height: 11.5vh;
         margin: 0 auto;
 
-        background: url(/source/img/main/progress.png) no-repeat center center;
+        background: url(../img/main/progress.png) no-repeat center center;
         background-size: cover;
     }
     &__shipments {
@@ -167,7 +167,7 @@
         height: 11.5vh;
         margin: 0 auto;
 
-        background: url(/source/img/main/usa-map.png) no-repeat center center;
+        background: url(../img/main/usa-map.png) no-repeat center center;
         background-size: cover;
     }
 }
