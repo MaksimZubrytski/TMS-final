@@ -17,14 +17,14 @@
         height: 4.8vh;
     }
     .user {
-        background: url(../source/img/aside/users.png) no-repeat center center;
+        background: url(../img/aside/users.png) no-repeat center center;
         background-color: #C34455;
     }
     .chat {
-        background: url(../source/img/aside/chat.png) no-repeat center center;
+        background: url(../img/aside/chat.png) no-repeat center center;
     }
     .like {
-        background: url(../source/img/aside/like.png) no-repeat center center;
+        background: url(../img/aside/like.png) no-repeat center center;
     }
     &__users {
         display: block;
@@ -68,7 +68,7 @@
         margin-left: 48px;
         width: 20px;
         height: 16px;
-        background: url(../source/img/aside/chat-copy.png) no-repeat center center;
+        background: url(../img/aside/chat-copy.png) no-repeat center center;
         
     }
     &__search {
@@ -91,13 +91,13 @@
         margin-left: 18px;
         width: 19px;
         height: 19px;
-        background: url(../source/img/aside/zoom.png) no-repeat center center;
+        background: url(../img/aside/zoom.png) no-repeat center center;
     }
     .edit {
         margin: 0;
         margin-left: 14px;
         width: 19px;
         height: 19px;
-        background: url(../source/img/aside/edit.png) no-repeat center center;
+        background: url(../img/aside/edit.png) no-repeat center center;
     }
 }
