@@ -16,7 +16,7 @@
     font-weight: 700;
     text-align: center;
     font-size: 12px;
-    background-color: #ECECEC;
+    
 }
 /* =============== Config *===========*/
 a {
@@ -34,14 +34,14 @@ ul {
     flex-direction: column;
 
     width: 1296px;
-    height: 1000px;
-    background-color: orange;
+    
+    
 
 }
-.test-2 {
+.main-body-container {
     display: flex;
 }
-.test-3 {
+.adside-footer-container {
     display: flex;
     flex-direction: column;
 }

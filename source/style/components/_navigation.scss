@@ -10,7 +10,7 @@
     &__logo {
         display: flex;
         width: 70px;
-        height: 71px;
+        height: 7.1vh;
         background-color: #ffffff;
 
         
@@ -29,7 +29,7 @@
         flex-direction: column;
         
         width: 100%;
-        height: calc(100vh - 71px);
+        height: calc(100vh - 7.1vh);
         
     }
     &__link {

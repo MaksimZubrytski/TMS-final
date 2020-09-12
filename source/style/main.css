@@ -17,7 +17,6 @@
   font-weight: 700;
   text-align: center;
   font-size: 12px;
-  background-color: #ECECEC;
 }
 
 /* =============== Config *===========*/
@@ -44,7 +43,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 70px;
-  height: 71px;
+  height: 7.1vh;
   background-color: #ffffff;
 }
 
@@ -65,7 +64,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: calc(100vh - 71px);
+  height: calc(100vh - 7.1vh);
 }
 
 .nav__link {
@@ -94,17 +93,15 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 1296px;
-  height: 1000px;
-  background-color: orange;
 }
 
-.test-2 {
+.main-body-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.test-3 {
+.adside-footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +120,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 71px;
+  height: 7.1vh;
   background-color: #FFFFFF;
 }
 
@@ -221,7 +218,7 @@ ul {
 
 .header__img-user {
   width: 71px;
-  height: 71px;
+  height: 7.1vh;
   background: url(/source/img/header/kendall-jenner.png) no-repeat center center;
   background-size: cover;
 }
@@ -237,9 +234,9 @@ ul {
 }
 
 .header__name {
-  padding-top: 25px;
-  margin-bottom: 10px;
-  margin-left: 18px;
+  padding-top: 2.5vh;
+  margin-bottom: 1vh;
+  margin-left: 1.8vh;
   font-size: 13px;
   color: #FC6B61;
 }
@@ -274,7 +271,7 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 21px 0;
+  padding: 2.1vh 0;
   margin: auto 0;
 }
 
@@ -284,7 +281,7 @@ ul {
 }
 
 .header__text-daily {
-  margin-bottom: 9px;
+  margin-bottom: 0.9vh;
   color: #777777;
   font-size: 12px;
 }
@@ -292,7 +289,7 @@ ul {
 .header__text-numbers {
   color: #FD5B6C;
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 0.8vh;
 }
 
 .header__text-count {
@@ -334,7 +331,6 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #BFBFBF;
-  background-color: brown;
 }
 
 .main__graph {
@@ -353,11 +349,11 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 704px;
-  height: 266px;
-  padding: 30px;
+  height: 26.6vh;
+  padding: 1.8vh;
   text-align: left;
   background-color: #FFFFFF;
-  border: blue 2px solid;
+  border: #ECECEC 8px solid;
 }
 
 .main__title-text-time {
@@ -431,7 +427,7 @@ ul {
 }
 
 .main__img-graph {
-  margin-top: 31px;
+  margin-top: 1.1vh;
   margin-left: 34px;
   width: 582px;
   height: 117px;
@@ -449,22 +445,21 @@ ul {
 }
 
 .main__revenue {
-  padding: 30px;
+  padding: 1.8vh;
   width: 264px;
-  height: 266px;
-  background-color: green;
-  border: blue 2px solid;
+  height: 26.6vh;
+  border: #ECECEC 8px solid;
 }
 
 .main__img-ellipse {
-  margin: 31px auto;
+  margin: 2.1vh auto;
   width: 124px;
-  height: 124px;
+  height: 12.4vh;
   background-color: #fff;
 }
 
 .main__customers {
-  padding: 30px;
+  padding: 1.8vh;
 }
 
 .main__title-img {
@@ -480,7 +475,7 @@ ul {
 
 .main__img-customers {
   width: 43px;
-  height: 43px;
+  height: 4.3vh;
   background-color: #5BCCFF;
 }
 
@@ -495,12 +490,9 @@ ul {
 }
 
 .main .quate {
-  width: 275px;
-  height: 90px;
-  border: blue 1px solid;
-}
-
-.main .quate {
+  width: 345px;
+  height: 8.4vh;
+  border: #ECECEC 8px solid;
   margin-top: auto;
 }
 
@@ -514,7 +506,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 37px;
+  height: 3.7vh;
   border-top: 1px solid #EDEDED;
   border-bottom: 1px solid #EDEDED;
 }
@@ -527,14 +519,13 @@ ul {
 
 .main__progress {
   width: 241px;
-  height: 245px;
-  background-color: green;
-  border: blue 2px solid;
+  height: 24.5vh;
+  border: #ECECEC 8px solid;
 }
 
 .main__img-progress {
   width: 187px;
-  height: 115px;
+  height: 11.5vh;
   margin: 0 auto;
   background: url(/source/img/main/progress.png) no-repeat center center;
   background-size: cover;
@@ -542,20 +533,20 @@ ul {
 
 .main__shipments {
   width: 241px;
-  height: 245px;
+  height: 24.5vh;
   background-color: #ffffff;
-  border: blue 2px solid;
+  border: #ECECEC 8px solid;
 }
 
 .main__img-map {
   width: 187px;
-  height: 115px;
+  height: 11.5vh;
   margin: 0 auto;
   background: url(/source/img/main/usa-map.png) no-repeat center center;
   background-size: cover;
 }
 
-.test {
+.main-customer-task-shimpents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,9 +557,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 467px;
-  height: 508px;
-  background-color: green;
-  border: blue 2px solid;
+  height: 50.8vh;
+  border: #ECECEC 8px solid;
 }
 
 .main__task-progress-shipments {
@@ -583,9 +573,8 @@ ul {
 
 .main__task {
   width: 501px;
-  height: 245px;
-  background-color: green;
-  border: blue 2px solid;
+  height: 24.5vh;
+  border: #ECECEC 8px solid;
 }
 
 .main__progress-shipments {
@@ -603,9 +592,8 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 273px;
-  height: 61vh;
-  background-color: green;
-  border: blue 2px solid;
+  height: 51vh;
+  border: #ECECEC 8px solid;
 }
 
 .aside__nav {
@@ -613,13 +601,13 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 271px;
-  height: 48px;
+  height: 4.8vh;
   background-color: #F77358;
 }
 
 .aside__menu {
   width: 91px;
-  height: 48px;
+  height: 4.8vh;
 }
 
 .aside .user {
@@ -648,7 +636,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   width: 273px;
-  height: 85px;
+  height: 8.5vh;
   border-bottom: #F1F1F1 1px solid;
 }
 
@@ -730,15 +718,14 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px;
+  padding: 2.0vh;
   width: 273px;
-  height: 229px;
-  background-color: green;
-  border: blue 2px solid;
+  height: 27.9vh;
+  border: #ECECEC 8px solid;
 }
 
 .footer__title {
-  margin-bottom: 15px;
+  margin-bottom: 1.5vh;
 }
 
 .footer__list {
@@ -755,8 +742,8 @@ ul {
 .footer__item {
   width: 55px;
   height: 55px;
-  margin: 10px 5px;
-  background-color: #fff;
+  margin: 1.0vh 0.5vh;
+  background-color: #ccc;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

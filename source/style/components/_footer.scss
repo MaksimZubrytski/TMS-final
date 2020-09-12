@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     
-    padding: 30px;
+    padding: 2.0vh;
     
     width: 273px;
-    height: 229px;
-    background-color: green;
-    border: blue 2px solid;
+    height: 27.9vh;
+    
+    border: #ECECEC 8px solid;
     &__title {
-        margin-bottom: 15px;
+        margin-bottom: 1.5vh;
     }
 
     &__list {
@@ -22,7 +22,7 @@
     &__item {
         width: 55px;
         height: 55px;
-        margin: 10px 5px;
-        background-color: #fff;
+        margin: 1.0vh 0.5vh;
+        background-color: #ccc;
     }
 }

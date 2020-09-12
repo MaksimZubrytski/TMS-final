@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     width: 273px;
-    height: 61vh;
-    background-color: green;
-    border: blue 2px solid;
+    height: 51vh;
+    
+    border: #ECECEC 8px solid;
     &__nav {
         display: flex;
         width: 271px;
-        height: 48px;
+        height: 4.8vh;
         background-color: #F77358;
     }
 
     &__menu {
         width: 91px;
-        height: 48px;
+        height: 4.8vh;
     }
     .user {
         background: url(/source/img/aside/users.png) no-repeat center center;
@@ -36,7 +36,7 @@
         
         align-items: center;
         width: 273px;
-        height: 85px;
+        height: 8.5vh;
         border-bottom: #F1F1F1 1px solid;
     }
     &__img {

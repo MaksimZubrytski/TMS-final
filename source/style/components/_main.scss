@@ -3,7 +3,7 @@
     flex-direction: column;
 
     color: #BFBFBF;
-    background-color: brown;
+    
 
     &__graph {
         display: flex;
@@ -16,12 +16,12 @@
         display: flex;
         flex-direction: column;
         width: 704px;
-        height: 266px;
-        padding: 30px;
+        height: 26.6vh;
+        padding: 1.8vh;
 
         text-align: left;
         background-color: #FFFFFF;
-        border: blue 2px solid;
+        border: #ECECEC 8px solid;
     }
     &__title-text-time {
         display: flex;
@@ -67,7 +67,7 @@
         cursor: pointer;
     }
     &__img-graph {
-        margin-top: 31px;
+        margin-top: 1.1vh;
         margin-left: 34px;
         width: 582px;
         height: 117px; 
@@ -89,21 +89,21 @@
     }
 
     &__revenue {
-        padding: 30px;
+        padding: 1.8vh;
         width: 264px;
-        height: 266px;
-        background-color: green;
-        border: blue 2px solid;
+        height: 26.6vh;
+        
+        border: #ECECEC 8px solid;
         
     }
     &__img-ellipse {
-        margin: 31px auto;
+        margin: 2.1vh auto;
         width: 124px;
-        height: 124px;
+        height: 12.4vh;
         background-color: #fff;
     }
     &__customers {
-        padding: 30px;
+        padding: 1.8vh;
     }
     &__title-img {
         display: flex;
@@ -112,7 +112,7 @@
     }
     &__img-customers {
         width: 43px;
-        height: 43px;
+        height: 4.3vh;
         background-color: #5BCCFF;
     }
     &__quate {
@@ -121,18 +121,16 @@
 
     }
     .quate {
-        width: 275px;
-        height: 90px;
-        border: blue 1px solid;
-    }
-    .quate {
+        width: 345px;
+        height: 8.4vh;
+        border: #ECECEC 8px solid;
         margin-top: auto;
     }
     &__order {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        height: 37px;
+        height: 3.7vh;
 
         border-top: 1px solid #EDEDED;
         border-bottom: 1px solid #EDEDED;
@@ -145,13 +143,13 @@
     }
     &__progress {
         width: 241px;
-        height: 245px;
-        background-color: green;
-        border: blue 2px solid;
+        height: 24.5vh;
+        
+        border: #ECECEC 8px solid;
     }
     &__img-progress {
         width: 187px;
-        height: 115px;
+        height: 11.5vh;
         margin: 0 auto;
 
         background: url(/source/img/main/progress.png) no-repeat center center;
@@ -159,14 +157,14 @@
     }
     &__shipments {
         width: 241px;
-        height: 245px;
+        height: 24.5vh;
         
         background-color: #ffffff;
-        border: blue 2px solid;
+        border:#ECECEC 8px solid;
     }
     &__img-map {
         width: 187px;
-        height: 115px;
+        height: 11.5vh;
         margin: 0 auto;
 
         background: url(/source/img/main/usa-map.png) no-repeat center center;
@@ -176,7 +174,7 @@
 
 
 
-.test {
+.main-customer-task-shimpents {
     display: flex;
     
 }
@@ -184,9 +182,9 @@
 .main__customers {
     display: flex;
     width: 467px;
-    height: 508px;
-    background-color: green;
-    border: blue 2px solid;
+    height: 50.8vh;
+    
+    border: #ECECEC 8px solid;
 }
 .main__task-progress-shipments {
     display: flex;
@@ -195,9 +193,9 @@
 }
 .main__task {
     width: 501px;
-    height: 245px;
-    background-color: green;
-    border: blue 2px solid;
+    height: 24.5vh;
+    
+    border: #ECECEC 8px solid;
 }
 .main__progress-shipments {
     display: flex;
