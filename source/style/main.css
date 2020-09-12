@@ -207,7 +207,7 @@ ul {
 .header__zoom {
   height: 16px;
   width: 16px;
-  background: url(source/img/header/zoom-in.png) no-repeat center center;
+  background: url(../img/header/zoom-in.png) no-repeat center center;
 }
 
 .header__user {
@@ -219,7 +219,7 @@ ul {
 .header__img-user {
   width: 71px;
   height: 7.1vh;
-  background: url(source/img/header/kendall-jenner.png) no-repeat center center;
+  background: url(../img/header/kendall-jenner.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -431,7 +431,7 @@ ul {
   margin-left: 34px;
   width: 582px;
   height: 117px;
-  background: url(source/img/main/graph.png) no-repeat center center;
+  background: url(../img/main/graph.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -514,7 +514,7 @@ ul {
 .main__img-clock {
   width: 12px;
   height: 12px;
-  background: url(source/img/main/wall-clock.png) no-repeat center center;
+  background: url(../img/main/wall-clock.png) no-repeat center center;
 }
 
 .main__progress {
@@ -527,7 +527,7 @@ ul {
   width: 187px;
   height: 11.5vh;
   margin: 0 auto;
-  background: url(source/img/main/progress.png) no-repeat center center;
+  background: url(../img/main/progress.png) no-repeat center center;
   background-size: cover;
 }
 
