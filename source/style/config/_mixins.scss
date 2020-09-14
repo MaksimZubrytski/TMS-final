@@ -1,0 +1,15 @@
+@mixin nav-link {
+    margin-top: $nav-text-margin-top;
+
+    font-size: $nav-text-fs;
+    font-weight: $nav-text-fw;
+    color: $nav-text-color;
+}
+
+@mixin flexbox($a, $b, $c, $d) {
+    display: flex;
+    justify-content: $a;
+    align-items: $b;
+    flex-direction: $c;
+    flex-wrap: $d;
+}

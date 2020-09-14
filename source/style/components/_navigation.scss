@@ -10,7 +10,7 @@
     &__logo {
         display: flex;
         width: 70px;
-        height: 7.1vh;
+        height: 71px;
         background-color: #ffffff;
 
         
@@ -21,7 +21,7 @@
         font-family: 'Dancing Script', cursive;
         color: #FC6367;
         font-size: 30px;
-        font-weight: bold;
+        
     }
 
     &__menu {
@@ -29,23 +29,36 @@
         flex-direction: column;
         
         width: 100%;
-        height: calc(100vh - 7.1vh);
+        height: calc(100vh - 71px);
         
     }
     &__link {
-        margin-top: 30px;
-        width: 100%;
-
+        @include flexbox(center, flex-end);
+        @include nav-link;
+        width: 70px;
+        height: 35px;
     }
-    &__text {
-        margin-top: 10px;
-
-        font-size: 10px;
-        font-weight: 400;
-        color: #FFFFFF;
+    .home {
+        background: url(../img/navigation/home.png) no-repeat center top;
     }
+    .bar-chart {
+        background: url(../img/navigation/bar-chart.png) no-repeat center top;
+    }
+    .user {
+        background: url(../img/navigation/user.png) no-repeat center top;
+    }
+    .settings {
+        background: url(../img/navigation/settings.png) no-repeat center top;
+    }
+    .information {
+        background: url(../img/navigation/information.png) no-repeat center top;
+    }
+    .power-button {
+        margin-top: auto;
+        margin-bottom: 20px;
+        height: 20px;
+        background: url(../img/navigation/power-button.png) no-repeat center top;
+    }
+
 }
-.bottom-link {
-    margin-top: auto;
-    margin-bottom: 20px;
-}
+

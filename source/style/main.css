@@ -31,6 +31,7 @@ ul {
   list-style-type: none;
 }
 
+/* Navigation */
 .nav {
   width: 70px;
   height: 100vh;
@@ -43,7 +44,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 70px;
-  height: 7.1vh;
+  height: 71px;
   background-color: #ffffff;
 }
 
@@ -64,12 +65,53 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: calc(100vh - 7.1vh);
+  height: calc(100vh - 71px);
 }
 
 .nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 30px;
-  width: 100%;
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 70px;
+  height: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav .home {
+  background: url(../img/navigation/home.png) no-repeat center top;
+}
+
+.nav .bar-chart {
+  background: url(../img/navigation/bar-chart.png) no-repeat center top;
+}
+
+.nav .user {
+  background: url(../img/navigation/user.png) no-repeat center top;
+}
+
+.nav .settings {
+  background: url(../img/navigation/settings.png) no-repeat center top;
+}
+
+.nav .information {
+  background: url(../img/navigation/information.png) no-repeat center top;
+}
+
+.nav .power-button {
+  margin-top: auto;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 20px;
+  background: url(../img/navigation/power-button.png) no-repeat center top;
 }
 
 .nav__text {
@@ -77,11 +119,6 @@ ul {
   font-size: 10px;
   font-weight: 400;
   color: #FFFFFF;
-}
-
-.bottom-link {
-  margin-top: auto;
-  margin-bottom: 20px;
 }
 
 .main-content {
