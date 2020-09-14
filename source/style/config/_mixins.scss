@@ -6,10 +6,12 @@
     color: $nav-text-color;
 }
 
-@mixin flexbox($a, $b, $c, $d) {
+@mixin flexbox($a, $b) {
     display: flex;
     justify-content: $a;
     align-items: $b;
-    flex-direction: $c;
-    flex-wrap: $d;
+}
+@mixin flexbox-column {
+    display: flex;
+    flex-direction: column;
 }

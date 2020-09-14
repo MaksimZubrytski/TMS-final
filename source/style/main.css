@@ -43,17 +43,22 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70px;
   height: 71px;
   background-color: #ffffff;
 }
 
-.nav .logo {
+.nav__text {
   margin: auto;
   font-family: 'Dancing Script', cursive;
   color: #FC6367;
   font-size: 30px;
-  font-weight: bold;
 }
 
 .nav__menu {
@@ -64,7 +69,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 70px;
   height: calc(100vh - 71px);
 }
 
@@ -72,18 +77,18 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
-  font-size: 10px;
-  font-weight: 400;
-  color: #ffffff;
-  width: 70px;
-  height: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 70px;
+  height: 35px;
 }
 
 .nav .home {
@@ -109,16 +114,8 @@ ul {
 .nav .power-button {
   margin-top: auto;
   margin-bottom: 20px;
-  width: 70px;
   height: 20px;
   background: url(../img/navigation/power-button.png) no-repeat center top;
-}
-
-.nav__text {
-  margin-top: 10px;
-  font-size: 10px;
-  font-weight: 400;
-  color: #FFFFFF;
 }
 
 .main-content {

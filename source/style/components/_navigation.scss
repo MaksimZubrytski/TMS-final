@@ -1,21 +1,17 @@
 .nav {
-    
-    
-    width: 70px;
+    width: $nav-width;
     height: 100vh;
     background: linear-gradient(to bottom, #EA6E54, #FD5272);
     
     
      
     &__logo {
-        display: flex;
-        width: 70px;
+        @include flexbox(center, center);
+        width: $nav-width;
         height: 71px;
         background-color: #ffffff;
-
-        
     }
-    .logo {
+    &__text {
         margin: auto;
 
         font-family: 'Dancing Script', cursive;
@@ -25,17 +21,15 @@
     }
 
     &__menu {
-        display: flex;
-        flex-direction: column;
-        
-        width: 100%;
+        @include flexbox-column;
+        width: $nav-width;
         height: calc(100vh - 71px);
         
     }
     &__link {
         @include flexbox(center, flex-end);
         @include nav-link;
-        width: 70px;
+        width: $nav-width;
         height: 35px;
     }
     .home {
