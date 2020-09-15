@@ -515,7 +515,7 @@ template {
   display: flex;
   width: 100%;
   height: 70px;
-  background-color: #FFFFFF;
+  border-bottom: 1px solid #F1F1F1;
 }
 
 .header__item {
@@ -526,8 +526,9 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding: 0px 20px;
+  padding: 0 20px;
   border: 1px solid #F1F1F1;
+  border-bottom: none;
 }
 
 .header .rectangle {
@@ -557,29 +558,33 @@ template {
 .header__btn {
   width: 20px;
   border: none;
-  background: url(../img/header/folder.png) no-repeat center center;
-  background-size: cover;
   cursor: pointer;
 }
 
 .header .img-folder {
   height: 18px;
+  background: url(../img/header/folder.png) no-repeat center center;
 }
 
-.header .settings {
-  height: 17x;
+.header .img-settings {
+  width: 21px;
+  height: 17px;
+  background: url(../img/header/settings.png) no-repeat center center;
 }
 
-.header .upload {
-  height: 18x;
+.header .img-upload {
+  height: 18px;
+  background: url(../img/header/upload.png) no-repeat center center;
 }
 
-.header .envelope {
-  height: 12x;
+.header .img-envelope {
+  height: 12px;
+  background: url(../img/header/envelope.png) no-repeat center center;
 }
 
-.header .planet-earth {
-  height: 20x;
+.header .img-planet-earth {
+  height: 20px;
+  background: url(../img/header/planet-earth.png) no-repeat center center;
 }
 
 .header__form {
@@ -620,11 +625,6 @@ template {
   top: 9px;
   right: 13px;
   cursor: pointer;
-}
-
-.header__zoom {
-  height: 16px;
-  width: 16px;
   background: url(../img/header/zoom-in.png) no-repeat center center;
 }
 
@@ -711,9 +711,35 @@ template {
 }
 
 .header__text-count {
+  position: relative;
+  left: 0px;
   margin: 0px 7px;
   color: #BFBFBF;
   font-size: 12px;
+}
+
+.header .triangle-up::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 3px;
+  left: -8px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 6px solid #A889E9;
+}
+
+.header .triangle-down::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 3px;
+  left: -8px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 6px solid #FD5670;
 }
 
 .header__text-add-stat {
