@@ -1,9 +1,9 @@
 @mixin nav-link {
-    margin-top: $nav-text-margin-top;
+    padding-top: 30px;
 
-    font-size: $nav-text-fs;
-    font-weight: $nav-text-fw;
-    color: $nav-text-color;
+    font-size: 10px;
+    font-weight: 400;
+    color:  #ffffff;
 }
 
 @mixin flexbox($a, $b) {

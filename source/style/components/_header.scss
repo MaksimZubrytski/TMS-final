@@ -6,7 +6,7 @@
     &__nav {
         display: flex;
         width: 100%;
-        height: 7.1vh;
+        height: $nav-head-height;
         background-color: #FFFFFF;
     }
     &__item {
@@ -16,6 +16,7 @@
         padding: 0px 20px;
         
         border: 1px solid #F1F1F1; 
+        
     }
     .rectangle {
         align-items: center;
@@ -28,6 +29,7 @@
         border-top-right-radius: 10px;
         background-color: #FD5372;
         
+        
     }
     &__circle {
         
@@ -37,10 +39,32 @@
         background-color: #fff;
         border-radius: 50%;
     }
-    &__img {
+    &__btn {
         width: 20px;
+        border: none;
+        background: url(../img/header/folder.png) no-repeat center center;
+        background-size: cover;
+        cursor: pointer;
         
+
     }
+    .img-folder {
+        height: 18px;
+    }
+    .settings {
+        height: 17x;
+    }
+    .upload {
+        height: 18x;
+    }
+    .envelope {
+        height: 12x;
+    }
+    .planet-earth {
+        height: 20x;
+    }
+    
+    
     &__form {
         position: relative;
         width: 300px;
@@ -86,7 +110,7 @@
     &__img-user {
         
         width: 71px;
-        height: 7.1vh;
+        height: 71px;
           
         background: url(../img/header/kendall-jenner.png) no-repeat center center;
         background-size: cover;
@@ -162,19 +186,3 @@
         color: #FD5B6C;
     }
 }
-.folder {
-    height: 18x;
-}
-.settings {
-    height: 17x;
-}
-.upload {
-    height: 18x;
-}
-.envelope {
-    height: 12x;
-}
-.planet-earth {
-    height: 20x;
-}
-

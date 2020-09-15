@@ -27,6 +27,7 @@ ul {
 
     list-style-type: none;
 }
+@import "./config/normalize";
 @import "./config/variables";
 @import "./config/mixins";
 @import "./components/navigation";
@@ -57,4 +58,3 @@ ul {
 
 @import "./components/footer";
 
-@import "./config/normalize";
