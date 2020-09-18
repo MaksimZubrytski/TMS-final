@@ -1,27 +1,32 @@
 .main {
     display: flex;
     flex-direction: column;
-
+    max-width: 1027px;
     color: #BFBFBF;
     
 
     &__graph {
         display: flex;
-        
-        width: 100%;
-        
+        @include large {
+            flex-direction: column;
+        }
     }
 
     &__monthly-progress {
+        @include large {
+            overflow: scroll;
+            min-width: 300px;
+        }
         display: flex;
         flex-direction: column;
-        width: 704px;
-        height: 26.6vh;
-        padding: 1.8vh;
+        
+        max-width: 704px;
 
+        padding: 30px;
+        margin: 16px 8px 8px 16px;
         text-align: left;
         background-color: #FFFFFF;
-        border: #ECECEC 8px solid;
+        
     }
     &__title-text-time {
         display: flex;
@@ -67,7 +72,7 @@
         cursor: pointer;
     }
     &__img-graph {
-        margin-top: 1.1vh;
+        margin-top: 20px;
         margin-left: 34px;
         width: 582px;
         height: 117px; 
@@ -85,90 +90,173 @@
 
 
     &__text-x:not(:first-child) {
-        margin-left: 25px;
+        margin-left: 28px;
     }
 
     &__revenue {
-        padding: 1.8vh;
+        padding: 30px;
         width: 264px;
-        height: 26.6vh;
         
-        border: #ECECEC 8px solid;
         
+        background-color: #FFFFFF;
+        margin: 16px 16px 8px 8px;
     }
     &__img-ellipse {
-        margin: 2.1vh auto;
+        margin: 30px auto;
         width: 124px;
-        height: 12.4vh;
+        height: 124px;
+        background: url(../img/main/ellipse.png) no-repeat center center;
+        background-size: cover;
         background-color: #fff;
     }
     &__customers {
-        padding: 1.8vh;
-    }
-    &__title-img {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin: 8px 8px 8px 16px;
         text-align: left;
+    }
+    .block-title {
+        flex: 100%;
+    }
+    &__img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 30px 0 46px;
+        margin-right: 15px;
     }
     &__img-customers {
         width: 43px;
-        height: 4.3vh;
-        background-color: #5BCCFF;
+        height: 43px;
+        margin-bottom: 8px;
     }
-    &__quate {
+
+    
+    .last-time {
+        font-size: 8px;
+        color: #979796;
+        
+    }
+    .sophie {
+        background: url(../img/main/sophie.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .peter {
+        background: url(../img/main/peter.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    &__wall {
         display: flex;
         flex-direction: column;
-
+        align-items: flex-end;
+        margin-top: 30px;
     }
-    .quate {
+    &__scroll {
+        direction: rtl;
+        overflow: auto;
+        height: 187px;
+        margin-bottom: 19px;
+    }
+    &__blockquote {
+
         width: 345px;
-        height: 8.4vh;
-        border: #ECECEC 8px solid;
+        height: 84px;
+        padding: 20px;
         margin-top: auto;
+        margin-bottom: 20px;
+        background-color: #FCFCFC;
+        border: 1px solid #F1F1F1;
+    }
+    &__strong {
+        color: #777777;
+    }
+    
+    .wall {
+        width: 316px;
+    }
+    &__task {
+        margin: 8px 16px 8px 8px;
+        min-width: 501px;
+        padding: 30px;
+        flex: auto;
+        background-color: #FFFFFF;
+        text-align: left;
+    }
+    .pink {
+        margin-left: 12px;
+        color:#FD566F;
     }
     &__order {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-        height: 3.7vh;
-
+        height: 38px;
+        
         border-top: 1px solid #EDEDED;
         border-bottom: 1px solid #EDEDED;
+    }
+    &__order:first-of-type {
+        margin-top: 20px;
+    }
+    &__time {
+        display: flex;
+    }
+    &__input {
+        width: 17px;
+        height: 17px;
+
     }
     &__img-clock {
         width: 12px;
         height: 12px; 
-
+        margin-right: 9px;
         background: url(../img/main/wall-clock.png) no-repeat center center;
     }
     &__progress {
-        width: 241px;
-        height: 24.5vh;
+        flex: auto;
+        min-width: 241px;
+        padding: 30px;
+        margin: 8px 8px 8px 8px;
+        background-color: #FFFFFF;
+
         
-        border: #ECECEC 8px solid;
     }
     &__img-progress {
         width: 187px;
-        height: 11.5vh;
-        margin: 0 auto;
+        height: 115px;
+        margin: 29px auto 23px;
 
         background: url(../img/main/progress.png) no-repeat center center;
         background-size: cover;
     }
     &__shipments {
-        width: 241px;
-        height: 24.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 24px 24px;
+        max-width: 241px;
         
+        margin: 8px 16px 8px 8px;
         background-color: #ffffff;
-        border:#ECECEC 8px solid;
+        
     }
     &__img-map {
         width: 187px;
-        height: 11.5vh;
-        margin: 0 auto;
+        height: 115px;
+        margin: 24px auto;
 
         background: url(../img/main/usa-map.png) no-repeat center center;
         background-size: cover;
+    }
+    &__shipments-data {
+        display: flex;
+        
+        align-items: flex-end;
+    }
+    .margin-null {
+        margin: 0px;
+        margin-right: 40px;
     }
 }
 
@@ -181,26 +269,43 @@
 
 .main__customers {
     display: flex;
-    width: 467px;
-    height: 50.8vh;
+    flex: auto;
+    max-width: 467px;
     
-    border: #ECECEC 8px solid;
+    background-color: #FFFFFF;
 }
 .main__task-progress-shipments {
     display: flex;
     flex-direction: column;
     
 }
-.main__task {
-    width: 501px;
-    height: 24.5vh;
-    
-    border: #ECECEC 8px solid;
-}
+
 .main__progress-shipments {
     display: flex;
+    
 }
 
-
+.triangle-up::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 3px;
+    left: -8px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #A889E9;
+}
+.triangle-down::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 3px;
+    left: -8px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #FD5670;
+}
 
 

@@ -1,20 +1,20 @@
 .aside {
     display: flex;
     flex-direction: column;
-    width: 273px;
-    height: 51vh;
+    min-width: 273px;
+    height: 564px;
+    background-color: #ffffff;
     
-    border: #ECECEC 8px solid;
     &__nav {
         display: flex;
-        width: 271px;
-        height: 4.8vh;
+        min-width: 271px;
+        
         background-color: #F77358;
     }
 
     &__menu {
         width: 91px;
-        height: 4.8vh;
+        height: 48px;
     }
     .user {
         background: url(../img/aside/users.png) no-repeat center center;
@@ -28,7 +28,7 @@
     }
     &__users {
         display: block;
-        overflow: scroll;
+        overflow: auto;
 
     }
     &__user {
@@ -36,7 +36,7 @@
         
         align-items: center;
         width: 273px;
-        height: 8.5vh;
+        height: 85px;
         border-bottom: #F1F1F1 1px solid;
     }
     &__img {
@@ -74,7 +74,10 @@
     &__search {
         display: flex;
         align-items: center;
-        height: 48px;
+        padding: 15px;
+        background-color: #FCFCFC;
+        border-top: 1px solid #F1F1F1;
+        border-bottom: 1px solid #F1F1F1;
     }
     &__form {
         display: flex;
@@ -85,6 +88,9 @@
         margin-left: 18px;
         font-size: 10px;
         color: #C0C0C0;
+        background: #FCFCFC;
+        border:none;
+        border-bottom: 1px solid #E9E9E9;
     }
     .zoom {
         margin: 0;

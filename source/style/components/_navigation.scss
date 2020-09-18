@@ -1,5 +1,8 @@
 .nav {
-    width: $nav-width;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-width: $nav-width;
     height: 100vh;
     
     &__logo {
@@ -7,7 +10,7 @@
         @include flexbox(center, center);
         width: $nav-width;
         height: $nav-head-height;
-        box-shadow: 0 0 10px #CCCCCC;
+        box-shadow: 5px 0 5px #CCCCCC;
     }
     &__text {
         margin: auto;

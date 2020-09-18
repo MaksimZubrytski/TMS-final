@@ -1,28 +1,54 @@
 .footer {
     display: flex;
     flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding: 20px;
     
-    padding: 2.0vh;
+    min-width: 273px;
+    height: 229px;
     
-    width: 273px;
-    height: 27.9vh;
-    
-    border: #ECECEC 8px solid;
+    background-color: #ffffff;
     &__title {
-        margin-bottom: 1.5vh;
+        margin-bottom: 15px;
     }
 
     &__list {
        display: flex;
        flex-wrap: wrap;
        justify-content: center;
-       
-        
     }
     &__item {
+        display: flex;
+        
+        
+        margin: 10px 5px;
+        border-radius: 10px;
+    }
+    &__link {
+        display: flex;
         width: 55px;
         height: 55px;
-        margin: 1.0vh 0.5vh;
-        background-color: #ccc;
+    }
+    &__img {
+        margin: auto;
+    }
+    .rdio {
+        background-color: #9D65D4;
+    }
+    .css {
+        background-color: #4FD8C4;
+    }
+    .deviantart {
+        background-color: #DD9C8C;
+    }
+    .xing {
+        background-color: #7677D7;
+    }
+    .vimeo {
+        background-color: #32BFDF;
+    }
+    .vk {
+        background-color: #FACC88;
     }
 }
