@@ -4,6 +4,9 @@
     left: 0;
     max-width: $nav-width;
     height: 100vh;
+    @include medium {
+        display: none;
+    }
     
     &__logo {
         position: relative;

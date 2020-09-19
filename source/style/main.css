@@ -372,6 +372,37 @@ template {
   display: none;
 }
 
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #56999f;
+}
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
 /* nav-head-height */
 /* Navigation */
 .nav {
@@ -381,6 +412,12 @@ template {
   left: 0;
   max-width: 70px;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__logo {
@@ -486,18 +523,24 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 100%;
+  width: calc(100% - 70px);
 }
 
+@media (max-width: 768px) {
+  .main-content {
+    width: 100%;
+  }
+}
+
+/*
 .main-body-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  background-color: #ECECEC;
-  margin: 0 auto;
+    display: flex;
+    
+    
+    background-color: #ECECEC;
+    margin: 0 auto;
 }
-
+*/
 .adside-footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,6 +549,14 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  max-width: 273px;
+}
+
+@media (max-width: 576px) {
+  .adside-footer-container {
+    min-width: 100%;
+  }
 }
 
 .header {
@@ -517,17 +568,23 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  min-width: 320px;
 }
 
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  height: 70px;
+  min-width: 320px;
+  min-height: 70px;
   border-bottom: 1px solid #F1F1F1;
+}
+
+@media (max-width: 1200px) {
+  .header__nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .header__item {
@@ -537,7 +594,11 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 72px;
+  min-height: 70px;
   border: 1px solid #F1F1F1;
   border-bottom: none;
 }
@@ -607,6 +668,7 @@ template {
 .header__search {
   margin: auto;
   background: #FFFFFF;
+  border-radius: 50px;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -698,22 +760,20 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  min-width: 100%;
   padding: 30px 0;
   margin: auto 0;
+  overflow-x: scroll;
 }
 
 .header__daily-statistics {
-  margin: auto 0;
+  min-width: 120px;
+  margin: auto 20px;
   text-align: left;
 }
 
 .header__text-daily {
-  margin-bottom: 0.9vh;
+  margin-bottom: 9px;
   color: #777777;
   font-size: 12px;
 }
@@ -721,7 +781,7 @@ template {
 .header__text-numbers {
   color: #FD5B6C;
   font-size: 20px;
-  margin-bottom: 0.8vh;
+  margin-bottom: 8px;
 }
 
 .header__text-count {
@@ -744,22 +804,23 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1027px;
+  min-width: 320px;
+  max-width: calc(100% - 273px);
   color: #BFBFBF;
+  background-color: #BFBFBF;
 }
 
 .main__graph {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 100%;
 }
 
 @media (max-width: 992px) {
   .main__graph {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -771,17 +832,21 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 704px;
+  width: 704px;
+  min-width: 320px;
   padding: 30px;
   margin: 16px 8px 8px 16px;
   text-align: left;
   background-color: #FFFFFF;
+  overflow-x: scroll;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .main__monthly-progress {
-    overflow: scroll;
-    min-width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -858,7 +923,7 @@ template {
 .main__img-graph {
   margin-top: 20px;
   margin-left: 34px;
-  width: 582px;
+  min-width: 582px;
   height: 117px;
   background: url(../img/main/graph.png) no-repeat center center;
   background-size: cover;
@@ -875,9 +940,17 @@ template {
 
 .main__revenue {
   padding: 30px;
-  width: 264px;
+  min-width: 264px;
   background-color: #FFFFFF;
   margin: 16px 16px 8px 8px;
+}
+
+@media (max-width: 992px) {
+  .main__revenue {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
 }
 
 .main__img-ellipse {
@@ -889,15 +962,33 @@ template {
   background-color: #fff;
 }
 
+.main-customer-task-shimpents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .main-customer-task-shimpents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main__customers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-width: 467px;
   padding: 30px;
   margin: 8px 8px 8px 16px;
   text-align: left;
+  background-color: #FFFFFF;
 }
 
 .main .block-title {
@@ -983,7 +1074,7 @@ template {
 
 .main__task {
   margin: 8px 16px 8px 8px;
-  min-width: 501px;
+  max-width: 501px;
   padding: 30px;
   -webkit-box-flex: 1;
       -ms-flex: auto;
@@ -1034,11 +1125,20 @@ template {
   background: url(../img/main/wall-clock.png) no-repeat center center;
 }
 
+.main__progress-shipments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 542px;
+  min-width: 360px;
+}
+
 .main__progress {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  min-width: 241px;
+  max-width: 241px;
+  min-width: 128px;
   padding: 30px;
   margin: 8px 8px 8px 8px;
   background-color: #FFFFFF;
@@ -1065,6 +1165,7 @@ template {
           justify-content: space-between;
   padding: 30px 24px 24px;
   max-width: 241px;
+  min-width: 128px;
   margin: 8px 16px 8px 8px;
   background-color: #ffffff;
 }
@@ -1091,23 +1192,6 @@ template {
   margin-right: 40px;
 }
 
-.main-customer-task-shimpents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main__customers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  max-width: 467px;
-  background-color: #FFFFFF;
-}
-
 .main__task-progress-shipments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1116,12 +1200,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.main__progress-shipments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-width: 328px;
 }
 
 .triangle-up::after {
@@ -1165,7 +1244,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 271px;
+  min-width: 273px;
   background-color: #F77358;
 }
 

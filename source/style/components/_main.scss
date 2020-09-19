@@ -1,32 +1,34 @@
 .main {
     display: flex;
     flex-direction: column;
-    max-width: 1027px;
+    min-width: 320px;
+    max-width: calc(100% - 273px);
     color: #BFBFBF;
-    
+    background-color: #BFBFBF;
 
     &__graph {
         display: flex;
+        max-width: 100%;
         @include large {
-            flex-direction: column;
+            flex-wrap: wrap;
         }
     }
 
     &__monthly-progress {
-        @include large {
-            overflow: scroll;
-            min-width: 300px;
-        }
         display: flex;
         flex-direction: column;
         
-        max-width: 704px;
-
+        width: 704px;
+        min-width: 320px;
         padding: 30px;
         margin: 16px 8px 8px 16px;
         text-align: left;
         background-color: #FFFFFF;
-        
+
+        overflow-x: scroll;
+        @include x-large {
+            flex-direction: column;
+        }
     }
     &__title-text-time {
         display: flex;
@@ -74,7 +76,7 @@
     &__img-graph {
         margin-top: 20px;
         margin-left: 34px;
-        width: 582px;
+        min-width: 582px;
         height: 117px; 
 
         background: url(../img/main/graph.png) no-repeat center center;
@@ -94,12 +96,16 @@
     }
 
     &__revenue {
+        
         padding: 30px;
-        width: 264px;
+        min-width: 264px;
         
         
         background-color: #FFFFFF;
         margin: 16px 16px 8px 8px;
+        @include large {
+            flex: auto;
+        }
     }
     &__img-ellipse {
         margin: 30px auto;
@@ -109,12 +115,21 @@
         background-size: cover;
         background-color: #fff;
     }
+    &-customer-task-shimpents {
+        display: flex;
+        max-width: 100%;
+        @include large {
+            flex-direction: column;;
+        }
+    }
     &__customers {
         display: flex;
         flex-wrap: wrap;
+        min-width: 467px;
         padding: 30px;
         margin: 8px 8px 8px 16px;
         text-align: left;
+        background-color: #FFFFFF;
     }
     .block-title {
         flex: 100%;
@@ -177,11 +192,14 @@
     }
     &__task {
         margin: 8px 16px 8px 8px;
-        min-width: 501px;
+        max-width: 501px;     
+        
         padding: 30px;
         flex: auto;
         background-color: #FFFFFF;
         text-align: left;
+
+        
     }
     .pink {
         margin-left: 12px;
@@ -213,9 +231,15 @@
         margin-right: 9px;
         background: url(../img/main/wall-clock.png) no-repeat center center;
     }
+    &__progress-shipments {
+        display: flex;
+        max-width: 542px;
+        min-width: 360px;
+    }
     &__progress {
         flex: auto;
-        min-width: 241px;
+        max-width: 241px;
+        min-width: 128px;
         padding: 30px;
         margin: 8px 8px 8px 8px;
         background-color: #FFFFFF;
@@ -236,7 +260,7 @@
         justify-content: space-between;
         padding: 30px 24px 24px;
         max-width: 241px;
-        
+        min-width: 128px;
         margin: 8px 16px 8px 8px;
         background-color: #ffffff;
         
@@ -262,28 +286,17 @@
 
 
 
-.main-customer-task-shimpents {
-    display: flex;
-    
-}
 
-.main__customers {
-    display: flex;
-    flex: auto;
-    max-width: 467px;
-    
-    background-color: #FFFFFF;
-}
+
+
 .main__task-progress-shipments {
     display: flex;
     flex-direction: column;
     
+    min-width: 328px;
 }
 
-.main__progress-shipments {
-    display: flex;
-    
-}
+
 
 .triangle-up::after {
     position: absolute;
