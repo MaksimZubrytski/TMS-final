@@ -8,7 +8,7 @@
     display: flex;
 
     max-width: 1370px;
-    
+    min-height: 100vh;
 
     margin: 0 auto;
     
@@ -39,6 +39,7 @@ ul {
     flex-wrap: wrap;
 
     width: calc(100% - 70px);
+    
     @include medium {
         width: 100%;
     }
@@ -49,6 +50,7 @@ ul {
 .adside-footer-container {
     display: flex;
     flex-direction: column;
+    vertical-align: top;
     width: 100%;
     max-width: 273px;
 
