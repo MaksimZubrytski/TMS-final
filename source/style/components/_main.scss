@@ -5,12 +5,19 @@
     max-width: calc(100% - 273px);
     color: #BFBFBF;
     background-color: #BFBFBF;
-
+    @include medium {
+        flex: auto;
+        max-width: none;
+    }
     &__graph {
         display: flex;
         max-width: 100%;
         @include large {
             flex-wrap: wrap;
+        }
+        @include medium {
+            flex: auto;
+            max-width: none;
         }
     }
 
@@ -27,7 +34,11 @@
 
         overflow-x: scroll;
         @include x-large {
+
             flex-direction: column;
+        }
+        @include small {
+            margin: 16px 0px 8px;
         }
     }
     &__title-text-time {
@@ -106,6 +117,9 @@
         @include large {
             flex: auto;
         }
+        @include small {
+            margin: 8px 0px;
+        }
     }
     &__img-ellipse {
         margin: 30px auto;
@@ -125,21 +139,25 @@
     &__customers {
         display: flex;
         flex-wrap: wrap;
-        min-width: 467px;
+        max-width: 467px;
         padding: 30px;
         margin: 8px 8px 8px 16px;
         text-align: left;
         background-color: #FFFFFF;
+        @include small {
+            margin: 8px 0px 8px;
+            padding: 30px;
+        }
     }
     .block-title {
         flex: 100%;
     }
     &__img {
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        margin: 30px 0 46px;
-        margin-right: 15px;
+        
+        
+        margin: 30px 0 0;
+        
     }
     &__img-customers {
         width: 43px;
@@ -164,31 +182,33 @@
     &__wall {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        margin-top: 30px;
+        margin-left: 20px;
+        
     }
     &__scroll {
         direction: rtl;
         overflow: auto;
         height: 187px;
-        margin-bottom: 19px;
     }
     &__blockquote {
 
-        width: 345px;
+        max-width: 345px;
         height: 84px;
         padding: 20px;
         margin-top: auto;
         margin-bottom: 20px;
         background-color: #FCFCFC;
         border: 1px solid #F1F1F1;
+        @include small {
+            padding: 5px;
+        }
     }
     &__strong {
         color: #777777;
     }
     
     .wall {
-        width: 316px;
+        max-width: 316px;
     }
     &__task {
         margin: 8px 16px 8px 8px;
@@ -198,8 +218,11 @@
         flex: auto;
         background-color: #FFFFFF;
         text-align: left;
-
-        
+        overflow-x: scroll;
+        @include small {
+            padding: 10px;
+            margin: 8px 0px;
+        }
     }
     .pink {
         margin-left: 12px;
@@ -210,7 +233,7 @@
         justify-content: space-between;
         align-items: center;
         height: 38px;
-        
+        min-width: 460px;
         border-top: 1px solid #EDEDED;
         border-bottom: 1px solid #EDEDED;
     }
@@ -235,6 +258,10 @@
         display: flex;
         max-width: 542px;
         min-width: 360px;
+        @include small {
+            flex-direction: column;
+            flex: auto;
+        }
     }
     &__progress {
         flex: auto;
@@ -243,7 +270,12 @@
         padding: 30px;
         margin: 8px 8px 8px 8px;
         background-color: #FFFFFF;
-
+        @include small {
+            flex: auto;
+            max-width: none;
+            margin: 8px 0px;
+            min-width: 320px;
+        }
         
     }
     &__img-progress {
@@ -263,6 +295,12 @@
         min-width: 128px;
         margin: 8px 16px 8px 8px;
         background-color: #ffffff;
+        @include small {
+            flex: auto;
+            max-width: none;
+            margin: 8px 0px 16px;
+            min-width: 320px;
+        }
         
     }
     &__img-map {
