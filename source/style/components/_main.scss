@@ -1,14 +1,11 @@
 .main {
-    
-    flex: auto;
-    
+    display: flex;
+    flex-direction: column;
     min-width: 320px;
-    max-width: 939px;
-    height: 841px;
+    max-width: calc(100% - 273px);
     color: #BFBFBF;
-    /*
-    background-color: #BFBFBF;*/
-    background-color: yellow;
+    background-color: #BFBFBF;
+
     &__graph {
         display: flex;
         max-width: 100%;

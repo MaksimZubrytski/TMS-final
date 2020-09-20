@@ -1,11 +1,13 @@
 .aside {
-
-    height: 612px;
-    background-color: lime;
+    display: flex;
+    flex-direction: column;
+    min-width: 273px;
+    height: 564px;
+    background-color: #ffffff;
     
     &__nav {
         display: flex;
-        
+        min-width: 273px;
         
         background-color: #F77358;
     }

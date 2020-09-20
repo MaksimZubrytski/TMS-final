@@ -5,19 +5,18 @@
 }
 
 .wrapper {
-    position: relative;
     display: flex;
 
-    max-width: 1280px;
-    min-height: 100vh;
+    max-width: 1370px;
     
+
     margin: 0 auto;
     
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: 12px;
-    overflow: hidden;
+    
 }
 /* =============== Config *===========*/
 a {
@@ -38,10 +37,10 @@ ul {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-left: 70px;
+
+    width: calc(100% - 70px);
     @include medium {
-        margin-left: 0px;
+        width: 100%;
     }
 }
 /*
@@ -54,14 +53,15 @@ ul {
 }
 */
 .adside-footer-container {
-
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 271px;
-    height: 841px;
-    
-    @media screen and (max-width: 590px) {
+    max-width: 273px;
+
+    @include small {
+        
         min-width: 100%;
-    }
+}
 }
 
 @import "./components/header";
