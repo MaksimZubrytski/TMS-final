@@ -21,6 +21,11 @@
         @content;
     }
 }
+@mixin medium {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
 
 @mixin x-large {
     @media (max-width: 1200px) {
@@ -34,8 +39,3 @@
     }
 }
 
-@mixin medium {
-    @media (max-width: 768px) {
-        @content;
-    }
-}

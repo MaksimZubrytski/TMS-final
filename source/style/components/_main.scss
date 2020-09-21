@@ -194,7 +194,7 @@
             text-align: center;
         }
     }
-    &__img {
+    &__user-block {
         display: flex;
         
         
@@ -297,6 +297,7 @@
         margin-top: 20px;
     }
     &__time {
+        min-width: 75px;
         display: flex;
     }
     &__input {

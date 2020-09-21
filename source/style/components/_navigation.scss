@@ -13,6 +13,7 @@
         @include flexbox(center, center);
         width: $nav-width;
         height: $nav-head-height;
+
         box-shadow: 5px 0 5px #CCCCCC;
     }
     &__text {
@@ -21,16 +22,14 @@
         font-family: 'Dancing Script', cursive;
         color: #FC6367;
         font-size: 30px;
-        
     }
 
     &__menu {
         @include flexbox-column;
         width: $nav-width;
         height: calc(100vh - 70px);
+
         background-color: #EA6E54;
-
-
     }
     &__link {
         position: relative;
@@ -38,7 +37,6 @@
         @include nav-link;
         width: $nav-width;
         height: $nav-head-height;
-        
     }
 
     .home {
@@ -58,12 +56,11 @@
     }
     .power-button {
         margin-top: auto;
-        
-        
         background: url(../img/navigation/power-button.png) no-repeat center center;
     }
     &__link:hover {
         background-color: #ff6040;  
+        
         &::after {
         content: "";
         position: absolute;
