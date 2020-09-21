@@ -27,13 +27,24 @@ ul {
 
     list-style-type: none;
 }
+
 @import "./config/normalize";
+
 @import "./config/variables";
+
 @import "./config/mixins";
+
 @import "./components/navigation";
 
+@import "./components/header";
 
+@import "./components/main";
 
+@import "./components/aside";
+
+@import "./components/footer";
+
+/*=========== main container ==========*/
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -45,8 +56,6 @@ ul {
     }
 }
 
-
-
 .adside-footer-container {
     display: flex;
     flex-direction: column;
@@ -57,15 +66,5 @@ ul {
     @include medium {
         max-width: none;
         min-width: 100%;
+    }
 }
-}
-
-@import "./components/header";
-
-
-@import "./components/main";
-
-@import "./components/aside";
-
-@import "./components/footer";
-

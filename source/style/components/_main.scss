@@ -296,10 +296,12 @@
     &__order:first-of-type {
         margin-top: 20px;
     }
+
     &__time {
         min-width: 75px;
         display: flex;
     }
+
     &__input {
         width: 17px;
         height: 17px;
@@ -311,6 +313,7 @@
         margin-right: 9px;
         background: url(../img/main/wall-clock.png) no-repeat center center;
     }
+
     &__progress-shipments {
         display: flex;
         max-width: 542px;
@@ -333,6 +336,7 @@
             
         }
     }
+
     &__progress {
         flex: auto;
         
@@ -340,21 +344,13 @@
         padding: 10px;
         margin: 8px 8px 8px 8px;
         background-color: #FFFFFF;
+
         @include x-large {
             flex: auto;
             margin: 8px 8px 16px 16px;
             max-width: none;
         }
-        @include large {
-            flex: auto;
-            margin: 8px 8px 16px 16px;
-            max-width: none;
-        }
-        @include medium {
-            flex: auto;
-            margin: 8px 8px 16px 16px;
-            max-width: none;
-        }
+
         @include small {
             flex: auto;
             max-width: none;
