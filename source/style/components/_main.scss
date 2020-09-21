@@ -9,6 +9,7 @@
         flex: auto;
         max-width: none;
     }
+
     &__graph {
         display: flex;
         max-width: 100%;
@@ -17,24 +18,22 @@
         }
         @include medium {
             flex: auto;
-            
         }
     }
 
     &__monthly-progress {
-        display: flex;
-        flex-direction: column;
+        @include flexbox-column;
         
         max-width: 704px;
         min-width: 320px;
         padding: 30px;
         margin: 16px 8px 8px 16px;
+
         text-align: left;
         background-color: #FFFFFF;
-
         overflow-x: scroll;
-        @include x-large {
 
+        @include x-large {
             flex-direction: column;
         }
         @include large {
@@ -54,8 +53,6 @@
         justify-content: space-between;
     }
     &__title {
-        
-        
         color: #767676;
         font-size: 14px;
     }
@@ -64,9 +61,7 @@
         align-items: center;
     }
     .oval {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox(center, center);
         margin-top: 0px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -81,8 +76,7 @@
         display: flex;
     }
     &__text-axis-y {
-        display: flex;
-        flex-direction: column;
+        @include flexbox-column;
         margin-top: 0px;
     }
     &__text-y {
@@ -126,12 +120,10 @@
             flex: auto;
             margin: 8px 16px;
         }
-        @include medium {
-            margin: 8px 16px;
-        }
         @include small {
-            margin: 8px 0px 8px;
+            margin: 8px 0px;
         }
+
     }
     &__img-ellipse {
         margin: 30px auto;
@@ -165,32 +157,13 @@
             margin: 8px 16px 8px;
             justify-content: center;
         }
-        @include large {
-            flex: auto;
-            max-width: none;
-            margin: 8px 16px 8px;
-            justify-content: center;
-        }
-        @include medium {
-            flex: auto;
-            max-width: none;
-            margin: 8px 16px 8px;
-            justify-content: center;
-        }
         @include small {
             margin: 8px 0px 8px;
-            padding: 30px;
         }
     }
     .block-title {
         flex: 100%;
         @include x-large {
-            text-align: center;
-        }
-        @include large {
-            text-align: center;
-        }
-        @include medium {
             text-align: center;
         }
     }
@@ -222,8 +195,7 @@
         background-size: cover;
     }
     &__wall {
-        display: flex;
-        flex-direction: column;
+        @include flexbox-column;
         margin-left: 20px;
         
     }
@@ -267,14 +239,7 @@
             max-width: none;
             margin: 8px 16px;
         }
-        @include large {
-            max-width: none;
-            margin: 8px 16px;
-        }
-        @include medium {
-            max-width: none;
-            margin: 8px 16px;
-        }
+
         @include small {
             padding: 10px;
             margin: 8px 0px 8px;
@@ -381,19 +346,7 @@
             align-items: center;
             max-width: none;
         }
-        @include large{
-            flex: auto;
-            margin: 8px 16px 16px 8px;
-            align-items: center;
-            max-width: none;
-        }
 
-        @include medium {
-            flex: auto;
-            margin: 8px 16px 16px 8px;
-            align-items: center;
-            max-width: none;
-        }
         @include small {
             flex: auto;
             max-width: none;
