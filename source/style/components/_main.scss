@@ -282,7 +282,7 @@
     &__progress-shipments {
         display: flex;
         max-width: 542px;
-        min-width: 360px;
+        min-width: 320px;
         @include x-large {
             flex: auto;
             max-width: none;
@@ -384,7 +384,7 @@
     display: flex;
     flex-direction: column;
     
-    min-width: 328px;
+    min-width: 320px;
 }
 
 

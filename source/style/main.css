@@ -1215,7 +1215,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   max-width: 542px;
-  min-width: 360px;
+  min-width: 320px;
 }
 
 @media (max-width: 1200px) {
@@ -1373,7 +1373,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 328px;
+  min-width: 320px;
 }
 
 .triangle-up::after {
